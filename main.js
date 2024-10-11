@@ -9,8 +9,10 @@ let contador = 0;
 
 //estrutura de repetição while = enquanto
 while (contador < listaDeTeclas.length) {
-
-    listaDeTeclas[contador].onclick = tocaSom;
+    //criando uma função anônima
+    listaDeTeclas[contador].onclick = function() {
+        tocaSom('#som_tecla_pom');
+    }
     //contador = contador + 1;
     contador++;
 
