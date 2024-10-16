@@ -2,7 +2,7 @@
 function tocaSom (seletorAudio) {
    const elemento = document.querySelector(seletorAudio);
 
-   if (elemento != null && elemento.localName === 'audio') {
+   if (elemento && elemento.localName === 'audio') {
         elemento.play()       
    } 
    else {
